@@ -4,6 +4,15 @@ Computer science graduate working across machine learning, backend development, 
 
 ## Featured Projects
 
+### [Public Spend Audit](https://github.com/bzainab/public-spend-audit)
+Forensic analytics over UK public sector spending data — 23,707 payments worth £7.13bn, reduced to a ranked shortlist of 44 suppliers.
+
+Pulls spend-over-£25,000 transparency releases from the data.gov.uk API and reconciles inconsistent publisher schemas into one ledger, handling the things that actually break ingestion: accounting-bracket negatives, European decimal separators, files labelled CSV that are really XLSX. Then runs the standard forensic tests — Benford conformity, duplicate payment detection, threshold proximity, supplier concentration — and scores supplier risk two ways: a transparent weighted sum that names the reason for every selection, plus an Isolation Forest as an unsupervised cross-check.
+
+The part I'd point at: this population is censored at £25,000, so first-digit Benford is invalid by construction. The pipeline detects that and marks the result unreliable rather than reporting a false finding.
+
+`Python` `pandas` `scikit-learn` `Altair` `Streamlit` `pytest`
+
 ### [Cardiovascular Risk Prediction](https://github.com/bzainab/cardiovascular-risk-prediction)
 An end-to-end machine learning system predicting 10-year coronary heart disease risk from the Framingham Heart Study dataset.
 
