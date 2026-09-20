@@ -21,11 +21,11 @@ Threads are created once and reused, work is split into row bands so each worker
 `C++` `std::thread` `mutexes` `condition variables` `thread pools` `CMake`
 
 ### [C# Algorithms and Data Structures](https://github.com/bzainab/csharp-algorithms-data-structures)
-Implementations of core data structures and algorithms, written from scratch.
+Core data structures and algorithms implemented from scratch, with no external dependencies.
 
-Generic tree structures over `IComparable`, AVL balancing via left and right rotations, queue operations, and a generic graph with weighted edges and BFS/DFS traversal — alongside sorting utilities, greedy optimisation, and complexity-analysis exercises.
+A three-layer tree hierarchy — binary tree, BST, then a self-balancing AVL tree handling all four rotation cases — over a generic `IComparable` constraint. A fixed-capacity circular queue with wrapping head/tail indices. A greedy knapsack solver selecting by value-to-weight ratio. And a weighted graph supporting BFS, DFS, and a least-risk `SafestRoute` traversal that expands the lowest-weight edge available via a priority queue.
 
-`C#` `.NET` `WinForms`
+`C#` `.NET Framework` `WinForms`
 
 ## Tech
 
