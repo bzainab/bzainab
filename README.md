@@ -1,7 +1,6 @@
 # Hi, I'm Zainab Baig
 
-Computer science graduate working across machine learning, backend development, and systems programming. I like problems where correctness actually matters — clinical risk modelling, concurrency, and data structures — and I care about building things end to end rather than stopping at a notebook.
-
+Computer science graduate working across machine learning, backend development, and systems programming. I like problems where correctness actually matters sudh as clinical risk modelling, concurrency, and data structures.
 ## Featured Projects
 
 ### [Public Spend Audit](https://github.com/bzainab/public-spend-audit)
