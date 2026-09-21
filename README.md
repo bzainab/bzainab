@@ -13,6 +13,17 @@ The part I'd point at: this population is censored at £25,000, so first-digit B
 
 `Python` `pandas` `scikit-learn` `Altair` `Streamlit` `pytest`
 
+### [Threat Intelligence Toolkit](https://github.com/bzainab/threat-intel-toolkit)
+Turns unstructured threat reporting into a structured intelligence product, running against live MITRE ATT&CK and CISA KEV data.
+
+Extracts indicators from prose — handling the defanged notation published reporting uses (`hxxps://evil[.]com`), and suppressing the false positives that dominate naive extraction: version strings that parse as IP addresses, filenames that parse as domains. Maps the report narrative onto ATT&CK techniques, compares observed tradecraft against documented actor profiles, and cross-references referenced CVEs against CISA's Known Exploited Vulnerabilities catalogue to surface what is ransomware-linked and overdue.
+
+The part I'd point at: ranking actors by TTP overlap is biased toward whoever is best documented. The sample demonstrates it — APT18 tops the Jaccard ranking on 7 matched techniques purely because it has 11 documented in total, while BlackByte explains 15 of 17. The report leads with coverage of what was observed, not the similarity score.
+
+No third-party runtime dependencies — standard library only, because for a tool ingesting hostile input every dependency is supply-chain surface.
+
+`Python` `MITRE ATT&CK` `STIX` `threat intelligence` `pytest`
+
 ### [Cardiovascular Risk Prediction](https://github.com/bzainab/cardiovascular-risk-prediction)
 An end-to-end machine learning system predicting 10-year coronary heart disease risk from the Framingham Heart Study dataset.
 
@@ -39,8 +50,9 @@ A three-layer tree hierarchy — binary tree, BST, then a self-balancing AVL tre
 ## Tech
 
 **Languages** — Python, C#, C++, JavaScript, SQL
-**ML & Data** — scikit-learn, XGBoost, pandas, NumPy, imbalanced-learn, matplotlib, seaborn
-**Tools** — Streamlit, Git, Visual Studio, CMake, Jupyter
+**ML & Data** — scikit-learn, XGBoost, pandas, NumPy, imbalanced-learn, Altair, matplotlib
+**Security** — MITRE ATT&CK, STIX, threat intelligence, OSINT, IOC analysis
+**Tools** — Streamlit, Git, pytest, Visual Studio, CMake, Jupyter
 
 ## Get in touch
 
