@@ -3,9 +3,11 @@
 Computer science graduate working across machine learning, backend development, and systems programming. I like problems where correctness actually matters sudh as clinical risk modelling, concurrency, and data structures.
 ## Featured Projects
 
-### [SignalDesk Threat Intelligence Dashboard   |   September 2026]
+### [SignalDesk Threat Intelligence Dashboard](bzainab.github.io/signaldesk-threat-intelligence/)
 GitHub  github.com/bzainab/signaldesk-threat-intelligence
+
 Live dashboard  bzainab.github.io/signaldesk-threat-intelligence/
+
 •	Integrated CISA KEV, FIRST EPSS and MITRE ATT&CK into a searchable intelligence workspace, with a dated baseline of 1,716 exploited vulnerabilities and 176 adversary profiles.
 •	Built interactive trend and vendor charts, combined search and filters, CVSS enrichment, source links and exports for vulnerability reviews and stakeholder briefings.
 •	Documented triage criteria and source limitations; handled collection failures with an explicitly labelled snapshot, and tested search, missing-score handling and CSV export safety.
